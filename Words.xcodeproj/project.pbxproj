@@ -7,25 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65C2DBE204D3ECD16703183D /* Pods_Words.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86B0DEFC931F0BBFBC9DCCE5 /* Pods_Words.framework */; };
 		7C5F60CD280739240099C62F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F60CC280739240099C62F /* AppDelegate.swift */; };
 		7C5F60CF280739240099C62F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F60CE280739240099C62F /* SceneDelegate.swift */; };
 		7C5F60D1280739240099C62F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F60D0280739240099C62F /* ViewController.swift */; };
 		7C5F60D6280739250099C62F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C5F60D5280739250099C62F /* Assets.xcassets */; };
+		7CAC2259280B3050006ACFFB /* RealmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAC2258280B3050006ACFFB /* RealmData.swift */; };
+		7CAC225B280B308E006ACFFB /* RealmProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAC225A280B308E006ACFFB /* RealmProvider.swift */; };
+		7CDC775F280BFFCB000F2A02 /* WordsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDC775E280BFFCB000F2A02 /* WordsModel.swift */; };
 		7CF76FC12808303100DDADEA /* ExtensionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF76FC02808303100DDADEA /* ExtensionVC.swift */; };
 		7CF76FC42808358C00DDADEA /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF76FC32808358C00DDADEA /* TableView.swift */; };
 		7CF76FC6280835E500DDADEA /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF76FC5280835E500DDADEA /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F84088F5215F987611B96ED /* Pods-Words.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Words.debug.xcconfig"; path = "Target Support Files/Pods-Words/Pods-Words.debug.xcconfig"; sourceTree = "<group>"; };
 		7C5F60C9280739240099C62F /* Words.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Words.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C5F60CC280739240099C62F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C5F60CE280739240099C62F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7C5F60D0280739240099C62F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7C5F60D5280739250099C62F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C5F60DA280739250099C62F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CAC2258280B3050006ACFFB /* RealmData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmData.swift; sourceTree = "<group>"; };
+		7CAC225A280B308E006ACFFB /* RealmProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmProvider.swift; sourceTree = "<group>"; };
+		7CDC775E280BFFCB000F2A02 /* WordsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsModel.swift; sourceTree = "<group>"; };
 		7CF76FC02808303100DDADEA /* ExtensionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionVC.swift; sourceTree = "<group>"; };
 		7CF76FC32808358C00DDADEA /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		7CF76FC5280835E500DDADEA /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		86B0DEFC931F0BBFBC9DCCE5 /* Pods_Words.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Words.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5E7D2A251610937C254A9D0 /* Pods-Words.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Words.release.xcconfig"; path = "Target Support Files/Pods-Words/Pods-Words.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65C2DBE204D3ECD16703183D /* Pods_Words.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CEE13086C0EDF6D840F59BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86B0DEFC931F0BBFBC9DCCE5 /* Pods_Words.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7C5F60C0280739240099C62F = {
 			isa = PBXGroup;
 			children = (
 				7C5F60CB280739240099C62F /* Words */,
 				7C5F60CA280739240099C62F /* Products */,
+				AD6885A2D1D1392FF16AFCD9 /* Pods */,
+				5CEE13086C0EDF6D840F59BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,13 +80,23 @@
 			isa = PBXGroup;
 			children = (
 				7CF76FBA280826F800DDADEA /* App */,
+				7CAC2257280B3019006ACFFB /* Model */,
 				7CF76FC22808355200DDADEA /* View */,
 				7CF76FBC28082C1C00DDADEA /* Controller */,
 				7CF76FBB2808272100DDADEA /* Support */,
-				7C5F60DA280739250099C62F /* Info.plist */,
 				7CF76FBF28082FCE00DDADEA /* Extention */,
+				7C5F60DA280739250099C62F /* Info.plist */,
 			);
 			path = Words;
+			sourceTree = "<group>";
+		};
+		7CAC2257280B3019006ACFFB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7CAC2258280B3050006ACFFB /* RealmData.swift */,
+				7CAC225A280B308E006ACFFB /* RealmProvider.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		7CF76FBA280826F800DDADEA /* App */ = {
@@ -106,8 +137,18 @@
 			children = (
 				7CF76FC32808358C00DDADEA /* TableView.swift */,
 				7CF76FC5280835E500DDADEA /* TableViewCell.swift */,
+				7CDC775E280BFFCB000F2A02 /* WordsModel.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		AD6885A2D1D1392FF16AFCD9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F84088F5215F987611B96ED /* Pods-Words.debug.xcconfig */,
+				D5E7D2A251610937C254A9D0 /* Pods-Words.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,9 +158,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C5F60DD280739250099C62F /* Build configuration list for PBXNativeTarget "Words" */;
 			buildPhases = (
+				44DCE930592A163288672FA9 /* [CP] Check Pods Manifest.lock */,
 				7C5F60C5280739240099C62F /* Sources */,
 				7C5F60C6280739240099C62F /* Frameworks */,
 				7C5F60C7280739240099C62F /* Resources */,
+				7BCE3AE33EBBA8EE4A4E7ABC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -174,6 +217,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		44DCE930592A163288672FA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Words-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BCE3AE33EBBA8EE4A4E7ABC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Words/Pods-Words-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Words/Pods-Words-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Words/Pods-Words-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7C5F60C5280739240099C62F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -181,9 +266,12 @@
 			files = (
 				7C5F60D1280739240099C62F /* ViewController.swift in Sources */,
 				7CF76FC42808358C00DDADEA /* TableView.swift in Sources */,
+				7CAC225B280B308E006ACFFB /* RealmProvider.swift in Sources */,
 				7CF76FC12808303100DDADEA /* ExtensionVC.swift in Sources */,
 				7CF76FC6280835E500DDADEA /* TableViewCell.swift in Sources */,
+				7CAC2259280B3050006ACFFB /* RealmData.swift in Sources */,
 				7C5F60CD280739240099C62F /* AppDelegate.swift in Sources */,
+				7CDC775F280BFFCB000F2A02 /* WordsModel.swift in Sources */,
 				7C5F60CF280739240099C62F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +397,7 @@
 		};
 		7C5F60DE280739250099C62F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F84088F5215F987611B96ED /* Pods-Words.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -337,6 +426,7 @@
 		};
 		7C5F60DF280739250099C62F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5E7D2A251610937C254A9D0 /* Pods-Words.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

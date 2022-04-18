@@ -5,7 +5,10 @@ final class WordsView: UIView {
     // MARK: - Properties
     lazy var tableView: UITableView = {
         let tableView = UITableView()
-        tableView.rowHeight = 50 
+        tableView.rowHeight = 50
+        tableView.separatorStyle = .singleLine
+        tableView.layoutMargins = UIEdgeInsets.zero
+        tableView.separatorInset = UIEdgeInsets.zero
         tableView.register(TableViewCell.self, forCellReuseIdentifier: "cell")
         return tableView
     }()
@@ -40,6 +43,4 @@ final class WordsView: UIView {
         addSubviews()
         makeConstraints()
     }
-    
-    
 }
