@@ -10,14 +10,9 @@
 		65C2DBE204D3ECD16703183D /* Pods_Words.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86B0DEFC931F0BBFBC9DCCE5 /* Pods_Words.framework */; };
 		7C5F60CD280739240099C62F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F60CC280739240099C62F /* AppDelegate.swift */; };
 		7C5F60CF280739240099C62F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F60CE280739240099C62F /* SceneDelegate.swift */; };
-		7C5F60D1280739240099C62F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F60D0280739240099C62F /* ViewController.swift */; };
 		7C5F60D6280739250099C62F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C5F60D5280739250099C62F /* Assets.xcassets */; };
-		7CAC2259280B3050006ACFFB /* RealmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAC2258280B3050006ACFFB /* RealmData.swift */; };
-		7CAC225B280B308E006ACFFB /* RealmProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAC225A280B308E006ACFFB /* RealmProvider.swift */; };
-		7CDC775F280BFFCB000F2A02 /* WordsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDC775E280BFFCB000F2A02 /* WordsModel.swift */; };
-		7CF76FC12808303100DDADEA /* ExtensionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF76FC02808303100DDADEA /* ExtensionVC.swift */; };
-		7CF76FC42808358C00DDADEA /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF76FC32808358C00DDADEA /* TableView.swift */; };
-		7CF76FC6280835E500DDADEA /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF76FC5280835E500DDADEA /* TableViewCell.swift */; };
+		7CDB4ED4281847BC00C3FF51 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDB4ED3281847BC00C3FF51 /* TableViewController.swift */; };
+		7CDB4ED6281849BD00C3FF51 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDB4ED5281849BD00C3FF51 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,15 +20,10 @@
 		7C5F60C9280739240099C62F /* Words.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Words.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C5F60CC280739240099C62F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C5F60CE280739240099C62F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7C5F60D0280739240099C62F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7C5F60D5280739250099C62F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C5F60DA280739250099C62F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7CAC2258280B3050006ACFFB /* RealmData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmData.swift; sourceTree = "<group>"; };
-		7CAC225A280B308E006ACFFB /* RealmProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmProvider.swift; sourceTree = "<group>"; };
-		7CDC775E280BFFCB000F2A02 /* WordsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsModel.swift; sourceTree = "<group>"; };
-		7CF76FC02808303100DDADEA /* ExtensionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionVC.swift; sourceTree = "<group>"; };
-		7CF76FC32808358C00DDADEA /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
-		7CF76FC5280835E500DDADEA /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		7CDB4ED3281847BC00C3FF51 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		7CDB4ED5281849BD00C3FF51 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		86B0DEFC931F0BBFBC9DCCE5 /* Pods_Words.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Words.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5E7D2A251610937C254A9D0 /* Pods-Words.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Words.release.xcconfig"; path = "Target Support Files/Pods-Words/Pods-Words.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,8 +83,6 @@
 		7CAC2257280B3019006ACFFB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7CAC2258280B3050006ACFFB /* RealmData.swift */,
-				7CAC225A280B308E006ACFFB /* RealmProvider.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -119,7 +107,7 @@
 		7CF76FBC28082C1C00DDADEA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7C5F60D0280739240099C62F /* ViewController.swift */,
+				7CDB4ED3281847BC00C3FF51 /* TableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -127,7 +115,6 @@
 		7CF76FBF28082FCE00DDADEA /* Extention */ = {
 			isa = PBXGroup;
 			children = (
-				7CF76FC02808303100DDADEA /* ExtensionVC.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -135,9 +122,7 @@
 		7CF76FC22808355200DDADEA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7CF76FC32808358C00DDADEA /* TableView.swift */,
-				7CF76FC5280835E500DDADEA /* TableViewCell.swift */,
-				7CDC775E280BFFCB000F2A02 /* WordsModel.swift */,
+				7CDB4ED5281849BD00C3FF51 /* TableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -264,14 +249,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C5F60D1280739240099C62F /* ViewController.swift in Sources */,
-				7CF76FC42808358C00DDADEA /* TableView.swift in Sources */,
-				7CAC225B280B308E006ACFFB /* RealmProvider.swift in Sources */,
-				7CF76FC12808303100DDADEA /* ExtensionVC.swift in Sources */,
-				7CF76FC6280835E500DDADEA /* TableViewCell.swift in Sources */,
-				7CAC2259280B3050006ACFFB /* RealmData.swift in Sources */,
+				7CDB4ED4281847BC00C3FF51 /* TableViewController.swift in Sources */,
+				7CDB4ED6281849BD00C3FF51 /* TableViewCell.swift in Sources */,
 				7C5F60CD280739240099C62F /* AppDelegate.swift in Sources */,
-				7CDC775F280BFFCB000F2A02 /* WordsModel.swift in Sources */,
 				7C5F60CF280739240099C62F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

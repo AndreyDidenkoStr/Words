@@ -1,17 +1,32 @@
+//
+//  TableViewCell.swift
+//  Words
+//
+//  Created by Andrey Kapitalov on 26.04.2022.
+//
+
 import UIKit
 
-final class TableViewCell: UITableViewCell {
+class TableViewCell: UITableViewCell {
     
-    var leftLabel = UILabel()
-    var rightLabel = UILabel()
-   
+    lazy var label: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .center
+        label.backgroundColor = .systemGroupedBackground
+        return label
+    }()
+    
+    lazy var labelTwo: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .center
+        label.backgroundColor = .systemGroupedBackground
+        return label
+    }()
+
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
-        self.addSubview(leftLabel)
-        self.addSubview(rightLabel)
-        
-        setupLabel()
+        super.init(style: .subtitle, reuseIdentifier: reuseIdentifier)
+        addSubview(label)
+        addSubview(labelTwo)
         setupConstraints()
     }
     
@@ -19,41 +34,24 @@ final class TableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setupLabel() {
-        leftLabel.numberOfLines = 0
-        leftLabel.adjustsFontSizeToFitWidth = true
-        leftLabel.backgroundColor = .systemGroupedBackground
-        leftLabel.layer.masksToBounds = true
-        leftLabel.layer.cornerRadius = 6
-        leftLabel.textAlignment = .center
-        
-        rightLabel.numberOfLines = 0
-        rightLabel.adjustsFontSizeToFitWidth = true
-        rightLabel.backgroundColor = .systemGroupedBackground
-        rightLabel.layer.masksToBounds = true
-        rightLabel.layer.cornerRadius = 6
-        rightLabel.textAlignment = .center
-    }
-    
-    
-    
     func setupConstraints() {
-        leftLabel.translatesAutoresizingMaskIntoConstraints = false
+        label.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            leftLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-            leftLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
-            leftLabel.heightAnchor.constraint(equalToConstant: 35),
-            leftLabel.trailingAnchor.constraint(equalTo: self.centerXAnchor, constant: -5)
+            label.topAnchor.constraint(equalTo: topAnchor, constant: 5),
+            label.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -5),
+            label.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
+            label.leadingAnchor.constraint(equalTo: centerXAnchor, constant: 5)
         ])
         
-        rightLabel.translatesAutoresizingMaskIntoConstraints = false
+        labelTwo.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            rightLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-            rightLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
-            rightLabel.heightAnchor.constraint(equalToConstant: 35),
-            rightLabel.leadingAnchor.constraint(equalTo: self.centerXAnchor, constant: 5)
+            labelTwo.topAnchor.constraint(equalTo: topAnchor, constant: 5),
+            labelTwo.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -5),
+            labelTwo.trailingAnchor.constraint(equalTo: centerXAnchor, constant: -5),
+            labelTwo.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10)
         ])
-        
-        
     }
+    
+    
+    
 }
