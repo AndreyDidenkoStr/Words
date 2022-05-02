@@ -1,21 +1,22 @@
-//
-//  AppDelegate.swift
-//  Words
-//
-//  Created by Andrey Kapitalov on 13.04.2022.
-//
-
 import UIKit
+import RealmSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        performRealmMigrations()
         return true
     }
+    //new Realm schema because migration
+    private func performRealmMigrations() {
+            Realm.Configuration.defaultConfiguration = Realm.Configuration(
+                schemaVersion: 0,
+                migrationBlock: { migration, oldSchemaVersion in },
+                deleteRealmIfMigrationNeeded: true
+            )
+            let _ = try! Realm()
+        }
 
     // MARK: UISceneSession Lifecycle
 

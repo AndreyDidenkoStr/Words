@@ -1,10 +1,3 @@
-//
-//  TableViewCell.swift
-//  Words
-//
-//  Created by Andrey Kapitalov on 26.04.2022.
-//
-
 import UIKit
 
 class TableViewCell: UITableViewCell {
@@ -13,6 +6,8 @@ class TableViewCell: UITableViewCell {
         let label = UILabel()
         label.textAlignment = .center
         label.backgroundColor = .systemGroupedBackground
+        label.clipsToBounds = true
+        label.layer.cornerRadius = 5
         return label
     }()
     
@@ -20,6 +15,8 @@ class TableViewCell: UITableViewCell {
         let label = UILabel()
         label.textAlignment = .center
         label.backgroundColor = .systemGroupedBackground
+        label.clipsToBounds = true
+        label.layer.cornerRadius = 5
         return label
     }()
 
@@ -51,7 +48,4 @@ class TableViewCell: UITableViewCell {
             labelTwo.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10)
         ])
     }
-    
-    
-    
 }

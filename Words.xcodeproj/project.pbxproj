@@ -11,6 +11,9 @@
 		7C5F60CD280739240099C62F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F60CC280739240099C62F /* AppDelegate.swift */; };
 		7C5F60CF280739240099C62F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F60CE280739240099C62F /* SceneDelegate.swift */; };
 		7C5F60D6280739250099C62F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C5F60D5280739250099C62F /* Assets.xcassets */; };
+		7CC2A4EC2819AA1800556D5A /* ExtentionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC2A4EB2819AA1800556D5A /* ExtentionTableViewController.swift */; };
+		7CD63A0D2818775C006B248F /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD63A0C2818775C006B248F /* DataModel.swift */; };
+		7CD63A0F28187AD3006B248F /* RealmDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD63A0E28187AD3006B248F /* RealmDataProvider.swift */; };
 		7CDB4ED4281847BC00C3FF51 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDB4ED3281847BC00C3FF51 /* TableViewController.swift */; };
 		7CDB4ED6281849BD00C3FF51 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDB4ED5281849BD00C3FF51 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -22,6 +25,9 @@
 		7C5F60CE280739240099C62F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7C5F60D5280739250099C62F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C5F60DA280739250099C62F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CC2A4EB2819AA1800556D5A /* ExtentionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentionTableViewController.swift; sourceTree = "<group>"; };
+		7CD63A0C2818775C006B248F /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		7CD63A0E28187AD3006B248F /* RealmDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDataProvider.swift; sourceTree = "<group>"; };
 		7CDB4ED3281847BC00C3FF51 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		7CDB4ED5281849BD00C3FF51 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		86B0DEFC931F0BBFBC9DCCE5 /* Pods_Words.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Words.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,8 +79,8 @@
 				7CAC2257280B3019006ACFFB /* Model */,
 				7CF76FC22808355200DDADEA /* View */,
 				7CF76FBC28082C1C00DDADEA /* Controller */,
-				7CF76FBB2808272100DDADEA /* Support */,
 				7CF76FBF28082FCE00DDADEA /* Extention */,
+				7CF76FBB2808272100DDADEA /* Support */,
 				7C5F60DA280739250099C62F /* Info.plist */,
 			);
 			path = Words;
@@ -83,6 +89,8 @@
 		7CAC2257280B3019006ACFFB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7CD63A0C2818775C006B248F /* DataModel.swift */,
+				7CD63A0E28187AD3006B248F /* RealmDataProvider.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -115,6 +123,7 @@
 		7CF76FBF28082FCE00DDADEA /* Extention */ = {
 			isa = PBXGroup;
 			children = (
+				7CC2A4EB2819AA1800556D5A /* ExtentionTableViewController.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -249,6 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CD63A0F28187AD3006B248F /* RealmDataProvider.swift in Sources */,
+				7CD63A0D2818775C006B248F /* DataModel.swift in Sources */,
+				7CC2A4EC2819AA1800556D5A /* ExtentionTableViewController.swift in Sources */,
 				7CDB4ED4281847BC00C3FF51 /* TableViewController.swift in Sources */,
 				7CDB4ED6281849BD00C3FF51 /* TableViewCell.swift in Sources */,
 				7C5F60CD280739240099C62F /* AppDelegate.swift in Sources */,
