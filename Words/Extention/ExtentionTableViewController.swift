@@ -42,8 +42,11 @@ extension TableViewController {
         }
         let arr = alert.textFields
         alert.addAction(UIAlertAction(title: "Save", style: .default, handler: { [self] (alertAction) in
-            self.dataProvider.updateObject(id: dataSource[indexPath]._id, leftWord: arr![1].text!.capitalized, rightWord: arr![0].text!.capitalized)
-            loadData()
+            guard arr![0].text == "" && arr![1].text == ""  else {
+                self.dataProvider.updateObject(id: dataSource[indexPath]._id, leftWord: arr![1].text!.capitalized, rightWord: arr![0].text!.capitalized)
+                loadData()
+                return
+            }
         } ))
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         self.present(alert, animated: true, completion: nil)
